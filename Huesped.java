@@ -10,10 +10,7 @@ public class Huesped extends Personaje {
 	}
 	
 	public Double felicidadAmigos() {
-		//TO DO !!
-		//return amigos.stream().map(a -> a.felicidad()).reduce(identity, accumulator);
-		//amigos.sum({amigo => amigo.felicidad()})
-		return felicidad();
+		return amigos.stream().mapToDouble(amigo -> amigo.felicidad()).sum();
 	}
 	
 	@Override  
