@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class Anfitrion extends Personaje {
+	//static -> Sola instancia de la variable //final -> Def. una variable constante
 	private static final Integer FACTOR_PARQUE = 10;  
 	private Double velocidadProcesamiento;
 	private List<Recuerdo> recuerdos; 
